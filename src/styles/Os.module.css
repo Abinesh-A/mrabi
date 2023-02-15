@@ -1,10 +1,12 @@
 .Os_div {
-    background-image: url(../../img/1115160.png);
+    background-image: url(../img/1115160.png);
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
-    min-height: 130vh;
+    height: 800px;
+    /* min-height: 130vh; */
     background-position-x: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .logo {
@@ -19,12 +21,11 @@
 }
 
 .w_screen {
-    margin: 0 15% 0 15%;
+    margin: 250px 15% 250px 15%;
     display: flex;
-    justify-content: space-between;
-    /* min-height: 100vh; */
-    margin-top: 15%;
+    justify-content: flex-start;
     align-items: center;
+    /* min-height: 100vh; */
     white-space: nowrap;
 }
 
@@ -33,100 +34,120 @@
     font-weight: 900;
     line-height: 80px;
     letter-spacing: -4.7px;
-    width: 70%;
-    /* font: 900 85px/80px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 3rem;
-
 }
 
-.w_nav {
-    width: 24%;
-    height: 500px;
-    background: #d83f87;
-    position: absolute;
+.nav_div {
+    position: relative;
     top: 0;
     right: 10%;
     float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.w_nav {
+    width: 300px;
+    height: 500px;
+    background: #d83f87;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 6rem 3.5rem;
 }
 
 .nav_menu {
     font-size: calc(10px + 3vmin);
     font-weight: 900;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     letter-spacing: -1px;
-    align-items: end;
 }
 
-.menu_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-top: 15vw;
-    padding: 4rem;
-    line-height: 35px;
+.date {
+    margin: 2rem 0 0 2rem;
 }
 
-@media (min-width: 701px) and (max-width: 1024px) {
+.date_text {
+    font-weight: 900;
+}
 
+@media (min-width: 701px) and (max-width: 1120px) {
     .w_screen {
-        margin: 23vw 15% 0 15%;
-    }
-
-    .w_text {
-        font-size: calc(60px + 2vmin);
-        padding: 0;
-    }
-
-    .w_nav {
-        width: 30%;
-        height: 450px;
-        background: #d83f87;
-        position: absolute;
-        top: 0;
-        right: 7%;
-        float: right;
-    }
-}
-
-@media (min-width: 701px) and (max-width: 770px) {
-    .w_nav {
-        height: 400px;
-        right: 0;
-    }
-    .w_text {
-        font-size: calc(50px + 2vmin);
-    }
-}
-
-@media (max-width: 700px) {
-    .logo {
-        padding: 2rem;
-        font-weight: 700;
-        position: absolute;
-    }
-    
-    .logo_text {
-        padding: 5%;
-        font-size: x-large;
-    }
-    .w_screen {
-        margin: 0 0 0 0;
-        min-height: 80vh;
-        /* margin-top: 50%; */
-        text-align: center;
+        margin: 200px 15% 200px 15%;
     }
 
     .w_text {
         font-size: calc(60px + 3vmin);
-        width: 100%;
-        padding: 0;
-
     }
 
     .w_nav {
-        display: none;
+        width: 270px;
+        height: 400px;
+        padding: 0 0 4rem 3.5rem;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 930px) {
+    .logo {
+        padding: 5rem 0 0 5rem;
     }
 
+    .w_screen {
+        margin: 200px 15% 200px 10%;
+    }
+
+    .w_text {
+        font-size: calc(60px + 3vmin);
+    }
+
+    .nav_div {
+        right: 5%;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 830px) {
+    .logo {
+        padding: 5rem 0 0 5rem;
+    }
+
+    .w_screen {
+        margin: 150px 15% 150px 10%;
+    }
+
+    .w_text {
+        font-size: calc(60px + 3vmin);
+    }
+
+    .w_nav {
+        width: 250px;
+        height: 300px;
+        padding: 0 0 2rem 3rem;
+    }
+
+    .nav_div {
+        right: 0;
+    }
+}
+
+@media (max-width: 740px) {
+    .logo {
+        padding: 5rem 0 0 3rem;
+    }
+
+    .w_screen {
+        margin: 200px 10% 100px 10%;
+        justify-content: center;
+    }
+
+    .w_text {
+        font-size: calc(60px + 3vmin);
+    }
+
+    .nav_div {
+        display: none;
+    }
+}
+@media (min-width: 1481px){}
+.Os_div {
+    margin: auto;
+    width: 1340px;
 }

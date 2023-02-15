@@ -1,5 +1,6 @@
 import styles from "@/styles/Os.module.css";
 import localFont from "@next/font/local";
+import { About } from "./About";
 
 const w_italic = localFont({ src: "../font/Water_Brush/WaterBrush-Regular.ttf" });
 
@@ -23,18 +24,19 @@ export const Os = () => {
               You'll looks<br></br> better <span className={w_italic.className}>with us</span>
             </p>
           </div>
+        </div>
+        <div className={styles.nav_div}>
           <div className={styles.w_nav}>
-            <div className={styles.menu_div}>
-              <div className={styles.nav_menu}>Words</div>
-              <div className={styles.nav_menu}>Project</div>
-              <div className={styles.nav_menu}>Skills</div>
-              <div className={styles.nav_menu}>Find Us</div>
-            </div>
+            <div className={styles.nav_menu}>Words</div>
+            <div className={styles.nav_menu}>Project</div>
+            <div className={styles.nav_menu}>Skills</div>
+            <div className={styles.nav_menu}>Find Us</div>
+          </div>
+          <div className={styles.date}>
+            <span className={styles.date_text}>{month} {day}</span>,{year}
           </div>
         </div>
-        <div>
-          {month} {day},{year}
-        </div>
+        <About/>
       </div>
     </>
   );
