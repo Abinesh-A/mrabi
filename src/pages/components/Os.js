@@ -2,7 +2,6 @@ import styles from "@/styles/Os.module.css";
 import localFont from "@next/font/local";
 import Image from "next/image";
 import quote from "../../img/quote_1.jpg";
-import { About } from "./About";
 
 const w_italic = localFont({
   src: "../font/Water_Brush/WaterBrush-Regular.ttf",

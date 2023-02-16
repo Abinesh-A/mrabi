@@ -78,6 +78,7 @@
     font-size: large;
     color: gray;
     letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .about_box_2 {
@@ -263,6 +264,12 @@ text-decoration: underline;
     .about_tag {
         padding: 0.2% 1.5% 0.5%;
         font-size: 12px;
+    }
+    .about_text {
+        
+        font-size: smaller;
+        color: gray;
+        letter-spacing: 1px;
     }
 }
 
