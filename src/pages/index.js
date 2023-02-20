@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css'
 import { Os } from './components/Os'
 import { About } from './components/About'
 import { Project } from './components/Project'
+import { Skill } from './components/Skill'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
          <Os/>
          {/* <About/> */}
          <Project/>
+         <Skill/>
       </main>
     </>
   )
