@@ -5,7 +5,7 @@ import quote from "../../img/quote_1.jpg";
 
 const w_italic = localFont({ src: "../font/Water_Brush/WaterBrush-Regular.ttf" });
 
-export const About = () => {
+const About = () => {
   return (
     <>
       <div className={styles.about_div}>
@@ -25,11 +25,16 @@ export const About = () => {
           </div>
           <div className={styles.about_box_2}>
             <div>Code</div>
-            <div><small>that</small></div>
-            <div style={{marginTop:"7%"}} className={w_italic.className}>ROCKS</div>
+            <div>
+              <small>that</small>
+            </div>
+            <div style={{ marginTop: "7%" }} className={w_italic.className}>
+              ROCKS
+            </div>
           </div>
         </div>
       </div>
     </>
   );
 };
+export default About;

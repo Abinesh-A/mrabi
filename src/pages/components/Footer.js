@@ -1,6 +1,6 @@
 import styles from "@/styles/Footer.module.css";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <>
       <div className={styles.foo_head}>Contact us</div>
@@ -33,3 +33,4 @@ export const Footer = () => {
     </>
   );
 };
+export default Footer;

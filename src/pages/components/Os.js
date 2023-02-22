@@ -9,7 +9,7 @@ const w_italic = localFont({
   style: "normal",
 });
 
-export const Os = () => {
+const Os = () => {
   var today = new Date();
 
   var month = today.toLocaleString("default", { month: "long" });
@@ -86,3 +86,4 @@ export const Os = () => {
     </>
   );
 };
+export default Os;

@@ -1,7 +1,8 @@
 import styles from "@/styles/Skill.module.css";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-export const Skill = () => {
+
+const Skill = () => {
   return (
     <>
       <div className={styles.skill_div}>
@@ -220,3 +221,4 @@ export const Skill = () => {
     </>
   );
 };
+export default Skill;

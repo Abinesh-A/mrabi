@@ -7,7 +7,7 @@ import pro4 from "../../img/pro_4.jpg";
 import pro5 from "../../img/pro_5.jpg";
 import pro6 from "../../img/pro_6.jpg";
 
-export const Project = () => {
+const Project = () => {
   return (
     <>
       <div className={styles.pro_div}>
@@ -22,37 +22,37 @@ export const Project = () => {
           </div>
           <div className={styles.pro_con}>
             <Image src={pro2} className={styles.pro_img} />
-             <div className={styles.pro_text_div}>
-            <div className={styles.pro_con_head}>Portfolio website</div>
-            <p className={styles.pro_con_text}>it was build by using react js</p>
+            <div className={styles.pro_text_div}>
+              <div className={styles.pro_con_head}>Portfolio website</div>
+              <p className={styles.pro_con_text}>it was build by using react js</p>
             </div>
           </div>
           <div className={styles.pro_con}>
             <Image src={pro3} className={styles.pro_img} />
-             <div className={styles.pro_text_div}>
-            <div className={styles.pro_con_head}>Portfolio website</div>
-            <p className={styles.pro_con_text}>it was build by using react js</p>
+            <div className={styles.pro_text_div}>
+              <div className={styles.pro_con_head}>Portfolio website</div>
+              <p className={styles.pro_con_text}>it was build by using react js</p>
             </div>
           </div>
           <div className={styles.pro_con}>
             <Image src={pro4} className={styles.pro_img} />
-             <div className={styles.pro_text_div}>
-            <div className={styles.pro_con_head}>Portfolio website</div>
-            <p className={styles.pro_con_text}>it was build by using react js</p>
+            <div className={styles.pro_text_div}>
+              <div className={styles.pro_con_head}>Portfolio website</div>
+              <p className={styles.pro_con_text}>it was build by using react js</p>
             </div>
           </div>
           <div className={styles.pro_con}>
             <Image src={pro5} className={styles.pro_img} />
-             <div className={styles.pro_text_div}>
-            <div className={styles.pro_con_head}>Portfolio website</div>
-            <p className={styles.pro_con_text}>it was build by using react js</p>
+            <div className={styles.pro_text_div}>
+              <div className={styles.pro_con_head}>Portfolio website</div>
+              <p className={styles.pro_con_text}>it was build by using react js</p>
             </div>
           </div>
           <div className={styles.pro_con}>
             <Image src={pro6} className={styles.pro_img_w} />
-             <div className={styles.pro_text_div}>
-            <div className={styles.pro_con_head}>Portfolio website</div>
-            <p className={styles.pro_con_text}>it was build by using react js</p>
+            <div className={styles.pro_text_div}>
+              <div className={styles.pro_con_head}>Portfolio website</div>
+              <p className={styles.pro_con_text}>it was build by using react js</p>
             </div>
           </div>
         </div>
@@ -60,3 +60,4 @@ export const Project = () => {
     </>
   );
 };
+export default Project;
