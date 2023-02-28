@@ -45,7 +45,7 @@ const Os = () => {
                 <div className={styles.about_text}>FCINQ [ ɛfsɛ̃k ] n. 1. This is the key that refreshes the screen. 2. Originally graphic designers, animators and developers, today it is a team of around thirty people, whose jobs range from strategy to development, including brand content and ux design . Whatever the medium, they strive to put maximum quality at the service of creating experiences and brand universes in order to convey a feeling, an emotion and make your communication a successful exchange with the user. final. 3. Our projects say more about us than long speeches.</div>
               </div>
             </div>
-            <div data-aos="fade-down" className={styles.flote_right}>
+            <div data-aos="fade-down" data-aos-delay="500" className={styles.flote_right}>
               <div className={styles.w_nav}>
                 <div className={styles.nav_menu}>Words</div>
                 <div className={styles.nav_menu}>Project</div>

@@ -8,14 +8,43 @@ import Skill from "./components/Skill";
 import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
+  const [isLoading, setLoading] = useState(true);
+
+  function someRequest() {
+    //Simulates a request; makes a "promise" that'll run for 2.5 seconds
+    return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+  }
+
+  useEffect(() => {
+    someRequest().then(() => {
+      if (isLoading) {
+      setLoading(!isLoading);}
+    });
+  });
+  if (isLoading) {
+    return (
+      <div className={styles.loader}>
+      <div className={styles.spinner}>
+        <span className={styles.spinner_part_0}></span>
+        <span className={styles.spinner_part_1}></span>
+        <span className={styles.spinner_part_2}></span>
+        <span className={styles.spinner_part_3}></span>
+        <span className={styles.spinner_part_0}></span>
+        <span className={styles.spinner_part_1}></span>
+        <span className={styles.spinner_part_2}></span>
+        <span className={styles.spinner_part_3}></span>
+      </div>
+    </div>
+    );
+  }
   return (
     <>
       <Head>
@@ -26,7 +55,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Os />
-        {/* <About/> */}
         <Project />
         <Skill />
         <Footer />
