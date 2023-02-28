@@ -32,7 +32,7 @@ const Os = () => {
                 </p>
               </div>
               <div className={styles.w_quote}>
-                <Image src={quote} className={styles.about_quote}></Image>
+                <Image alt="img" src={quote} className={styles.about_quote}></Image>
               </div>
               <div className={styles.about_box_1}>
                 <div className={styles.about_head}>
