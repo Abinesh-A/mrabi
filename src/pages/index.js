@@ -6,10 +6,16 @@ import Os from "./components/Os";
 import Project from "./components/Project";
 import Skill from "./components/Skill";
 import Footer from "./components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <Head>

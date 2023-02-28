@@ -13,7 +13,7 @@ const Skill = () => {
           <div className={styles.skill_quote}>
             "Imagination is more important<br></br>&nbsp;&nbsp;than knowledge."
           </div>
-          <div style={{ width: 125, height: 125 }}>
+          <div data-aos="fade-up" style={{ width: 125, height: 125 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -28,7 +28,7 @@ const Skill = () => {
               text={`React JS`}
             />
           </div>
-          <div style={{ width: 100, height: 100 }}>
+          <div data-aos="fade-up" style={{ width: 100, height: 100 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -45,7 +45,7 @@ const Skill = () => {
           </div>
         </div>
         <div className={styles.r_2}>
-          <div style={{ width: 130, height: 130 }}>
+          <div data-aos="fade-up" style={{ width: 130, height: 130 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -60,7 +60,7 @@ const Skill = () => {
               text={`CSS`}
             />
           </div>
-          <div style={{ width: 110, height: 110 }}>
+          <div data-aos="fade-up" style={{ width: 110, height: 110 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -75,7 +75,7 @@ const Skill = () => {
               text={`Bootstrap`}
             />
           </div>
-          <div style={{ width: 150, height: 150 }}>
+          <div data-aos="fade-up" style={{ width: 150, height: 150 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -92,7 +92,7 @@ const Skill = () => {
           </div>
         </div>
         <div className={styles.r_3}>
-          <div style={{ width: 100, height: 100 }}>
+          <div data-aos="fade-up" style={{ width: 100, height: 100 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -107,7 +107,7 @@ const Skill = () => {
               text={`JavaScript`}
             />
           </div>
-          <div style={{ width: 130, height: 130 }}>
+          <div data-aos="fade-up" style={{ width: 130, height: 130 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -122,7 +122,7 @@ const Skill = () => {
               text={`Next JS`}
             />
           </div>
-          <div style={{ width: 120, height: 120 }}>
+          <div data-aos="fade-up" style={{ width: 120, height: 120 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -137,7 +137,7 @@ const Skill = () => {
               text={`Redux`}
             />
           </div>
-          <div style={{ width: 100, height: 100 }}>
+          <div data-aos="fade-up" style={{ width: 100, height: 100 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -154,7 +154,7 @@ const Skill = () => {
           </div>
         </div>
         <div className={styles.r_4}>
-          <div style={{ width: 110, height: 110 }}>
+          <div data-aos="fade-up" style={{ width: 110, height: 110 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -169,7 +169,7 @@ const Skill = () => {
               text={`Node JS`}
             />
           </div>
-          <div style={{ width: 135, height: 135 }}>
+          <div data-aos="fade-up" style={{ width: 135, height: 135 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -184,7 +184,7 @@ const Skill = () => {
               text={`Express`}
             />
           </div>
-          <div style={{ width: 124, height: 124 }}>
+          <div data-aos="fade-up" style={{ width: 124, height: 124 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -201,7 +201,7 @@ const Skill = () => {
           </div>
         </div>
         <div className={styles.r_5}>
-          <div style={{ width: 150, height: 150 }}>
+          <div data-aos="fade-up" style={{ width: 150, height: 150 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
