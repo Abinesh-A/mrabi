@@ -28,7 +28,7 @@ const Skill = () => {
               text={`React JS`}
             />
           </div>
-          <div data-aos="fade-up" style={{ width: 100, height: 100 }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ width: 100, height: 100 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -60,7 +60,7 @@ const Skill = () => {
               text={`CSS`}
             />
           </div>
-          <div data-aos="fade-up" style={{ width: 110, height: 110 }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ width: 110, height: 110 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -92,7 +92,7 @@ const Skill = () => {
           </div>
         </div>
         <div className={styles.r_3}>
-          <div data-aos="fade-up" style={{ width: 100, height: 100 }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ width: 100, height: 100 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -122,7 +122,7 @@ const Skill = () => {
               text={`Next JS`}
             />
           </div>
-          <div data-aos="fade-up" style={{ width: 120, height: 120 }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ width: 120, height: 120 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -154,7 +154,7 @@ const Skill = () => {
           </div>
         </div>
         <div className={styles.r_4}>
-          <div data-aos="fade-up" style={{ width: 110, height: 110 }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ width: 110, height: 110 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
@@ -184,7 +184,7 @@ const Skill = () => {
               text={`Express`}
             />
           </div>
-          <div data-aos="fade-up" style={{ width: 124, height: 124 }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ width: 124, height: 124 }}>
             <CircularProgressbar
               styles={buildStyles({
                 // Text size
