@@ -1,17 +1,19 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import Os from "./components/Os";
+// import Os from "./components/Os";
 // import { About } from './components/About'
 import Project from "./components/Project";
 import Skill from "./components/Skill";
 import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const Os= React.lazy(()=>import(/* webpackChunkName: 'abi' */
+/* webpackPrefetch: true */
+"./components/Os"))
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -19,7 +21,7 @@ export default function Home() {
   const [isLoading, setLoading] = useState(true);
 
   function timer() {
-    return new Promise((resolve) => setTimeout(() => resolve(), 3000));
+    return new Promise((resolve) => setTimeout(() => resolve(), 5000));
   }
 
   useEffect(() => {
@@ -53,7 +55,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <React.Suspense>
         <Os />
+        </React.Suspense>
         <Project />
         <Skill />
         <Footer />
