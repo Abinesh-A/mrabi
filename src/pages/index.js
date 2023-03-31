@@ -25,29 +25,29 @@ export default function Home() {
     return new Promise((resolve) => setTimeout(() => resolve(), 5000));
   }
 
-  // useEffect(() => {
-  //   timer().then(() => {
-  //     if (isLoading) {
-  //       setLoading(!isLoading);
-  //     }
-  //   });
-  // });
-  // if (isLoading) {
-  //   return (
-  //     <div className={styles.loader}>
-  //       <div className={styles.spinner}>
-  //         <span className={styles.spinner_part_0}></span>
-  //         <span className={styles.spinner_part_1}></span>
-  //         <span className={styles.spinner_part_2}></span>
-  //         <span className={styles.spinner_part_3}></span>
-  //         <span className={styles.spinner_part_0}></span>
-  //         <span className={styles.spinner_part_1}></span>
-  //         <span className={styles.spinner_part_2}></span>
-  //         <span className={styles.spinner_part_3}></span>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  useEffect(() => {
+    timer().then(() => {
+      if (isLoading) {
+        setLoading(!isLoading);
+      }
+    });
+  });
+  if (isLoading) {
+    return (
+      <div className={styles.loader}>
+        <div className={styles.spinner}>
+          <span className={styles.spinner_part_0}></span>
+          <span className={styles.spinner_part_1}></span>
+          <span className={styles.spinner_part_2}></span>
+          <span className={styles.spinner_part_3}></span>
+          <span className={styles.spinner_part_0}></span>
+          <span className={styles.spinner_part_1}></span>
+          <span className={styles.spinner_part_2}></span>
+          <span className={styles.spinner_part_3}></span>
+        </div>
+      </div>
+    );
+  }
   return (
     <>
       <Head>
@@ -56,22 +56,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <React.Suspense
-        fallback={
-          <div className={styles.loader}>
-            <div className={styles.spinner}>
-              <span className={styles.spinner_part_0}></span>
-              <span className={styles.spinner_part_1}></span>
-              <span className={styles.spinner_part_2}></span>
-              <span className={styles.spinner_part_3}></span>
-              <span className={styles.spinner_part_0}></span>
-              <span className={styles.spinner_part_1}></span>
-              <span className={styles.spinner_part_2}></span>
-              <span className={styles.spinner_part_3}></span>
-            </div>
-          </div>
-        }
-      >
+      <React.Suspense>
         <main className={styles.main}>
           <Os />
           <Project />
