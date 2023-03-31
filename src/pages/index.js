@@ -11,10 +11,10 @@ import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-const Os = React.lazy(() => import(/* webpackChunkName: os*/ /* webpackPrefetch: true */ "./components/Os"));
-const Project = React.lazy(() => import(/* webpackChunkName: project*/ /* webpackPrefetch: true */ "./components/Project"));
-const Skill = React.lazy(() => import(/* webpackChunkName: skill*/ /* webpackPrefetch: true */ "./components/Skill"));
-const Footer = React.lazy(() => import(/* webpackChunkName: footer*/ /* webpackPrefetch: true */ "./components/Footer"));
+const Os = React.lazy(() => import(/* webpackChunkName: 'os' */ /* webpackPrefetch: true */ "./components/Os"));
+const Project = React.lazy(() => import(/* webpackChunkName: 'project' */ /* webpackPrefetch: true */ "./components/Project"));
+const Skill = React.lazy(() => import(/* webpackChunkName: 'skill' */ /* webpackPrefetch: true */ "./components/Skill"));
+const Footer = React.lazy(() => import(/* webpackChunkName: 'footer' */ /* webpackPrefetch: true */ "./components/Footer"));
 export default function Home() {
   useEffect(() => {
     AOS.init();
