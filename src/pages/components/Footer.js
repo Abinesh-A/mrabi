@@ -1,9 +1,9 @@
 import styles from "@/styles/Footer.module.css";
 import Image from "next/image";
-const Footer = () => {
+const Footer = ({findUsRef}) => {
   return (
     <>
-      <div className={styles.foo_head}>Contact us</div>
+      <div className={styles.foo_head} ref={findUsRef}>Contact us</div>
       <div className={styles.foo_con}>
         <div className={styles.foo_form}>
           <div className={styles.mail}>

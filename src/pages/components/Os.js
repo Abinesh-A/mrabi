@@ -9,7 +9,7 @@ const w_italic = localFont({
   style: "normal",
 });
 
-const Os = () => {
+const Os = ({ wordsRef, wordsFun, projectFun, skillsFun, findUsFun }) => {
   var today = new Date();
 
   var month = today.toLocaleString("default", { month: "long" });
@@ -32,7 +32,7 @@ const Os = () => {
                 </p>
               </div>
               <div className={styles.w_quote}>
-                <Image alt="img" src={quote} className={styles.about_quote}></Image>
+                <Image alt="img" src={quote} className={styles.about_quote} ref={wordsRef}></Image>
               </div>
               <div className={styles.about_box_1}>
                 <div className={styles.about_head}>
@@ -47,12 +47,20 @@ const Os = () => {
             </div>
             <div data-aos="fade-down" data-aos-delay="500" className={styles.flote_right}>
               <div className={styles.w_nav}>
-                <div className={styles.nav_menu}>Words</div>
-                <div className={styles.nav_menu}>Project</div>
-                <div className={styles.nav_menu}>Skills</div>
-                <div className={styles.nav_menu}>Find Us</div>
+                <div className={styles.nav_menu} onClick={wordsFun}>
+                  Words
+                </div>
+                <div className={styles.nav_menu} onClick={projectFun}>
+                  Project
+                </div>
+                <div className={styles.nav_menu} onClick={skillsFun}>
+                  Skills
+                </div>
+                <div className={styles.nav_menu} onClick={findUsFun}>
+                  Find Us
+                </div>
                 <div>
-                  <a href="https://www.linkedin.com/in/mr-abi-3aa684183/" target={"_blank"}>
+                  <a href="https://www.linkedin.com/in/abinesh-a-3aa684183" target={"_blank"}>
                     <svg x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30">
                       <path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"></path>
                     </svg>

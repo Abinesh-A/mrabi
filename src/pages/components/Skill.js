@@ -2,10 +2,10 @@ import styles from "@/styles/Skill.module.css";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const Skill = () => {
+const Skill = ({skillsRef}) => {
   return (
     <>
-      <div className={styles.skill_div}>
+      <div className={styles.skill_div} ref={skillsRef}>
         <div className={styles.skill_head}>Skills</div>
       </div>
       <div className={styles.skill_con}>
