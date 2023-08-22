@@ -3,11 +3,6 @@ import styles from "@/styles/Skill.module.css";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-import React from "react";
-import styles from "@/styles/Skill.module.css";
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
-
 const skillsData = [
   { name: "React JS", pathColor: "#F44336", value: 90, dataAosDuration: 1000, className: styles.ball_2_1 },
   { name: "HTML", pathColor: "#607D8B", value: 100, dataAosDuration: 1000, className: styles.ball_2 },
