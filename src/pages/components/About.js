@@ -10,7 +10,7 @@ const About = () => {
     <>
       <div className={styles.about_div}>
         <div className={styles.about_con_1}>
-          <Image alt="img" src={quote} className={styles.about_quote}></Image>
+          <Image loading="lazy" alt="img" src={quote} className={styles.about_quote}></Image>
         </div>
         <div className={styles.about_con_2}>
           <div className={styles.about_box_1}>

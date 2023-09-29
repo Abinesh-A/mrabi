@@ -2,11 +2,14 @@ import styles from "@/styles/Os.module.css";
 import localFont from "@next/font/local";
 import Image from "next/image";
 import quote from "../../img/quote_1.jpg";
+// import { useEffect, useRef, useState } from "react";
 
 const w_italic = localFont({
-  src: "../font/Water_Brush/WaterBrush-Regular.ttf",
+  // src: "../font/Rancho/Rancho-Regular.ttf",
+  src: '../font/Water_Brush/WaterBrush-Regular.ttf', 
   weight: "500",
   style: "normal",
+  display: 'auto'
 });
 
 const Os = ({ wordsRef, wordsFun, projectFun, skillsFun, findUsFun }) => {
@@ -15,11 +18,41 @@ const Os = ({ wordsRef, wordsFun, projectFun, skillsFun, findUsFun }) => {
   var month = today.toLocaleString("default", { month: "long" });
   let day = today.getDate();
   let year = today.getFullYear();
+
+  // const containerRef = useRef(null);
+  // const [shouldRotate, setShouldRotate] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const container = containerRef.current;
+  //     if (container) {
+  //       // Change this value to adjust when the rotation should happen
+  //       const scrollThreshold = 630;
+  //       const scrollY = window.scrollY || window.pageYOffset;
+
+  //       if (scrollY > scrollThreshold) {
+  //         setShouldRotate(true);
+  //       } else {
+  //         setShouldRotate(false);
+  //       }
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <>
       <div className={styles.w_div}>
         <div className={styles.Os_div}>
-          <div className={styles.logo}>
+          <div
+            className={styles.logo}
+            // className={`${styles.logo} ${shouldRotate ? styles.scrolled:""}`}
+            // ref={containerRef}
+          >
             <div>
               By<span className={styles.logo_text}>MrABi</span>
             </div>
@@ -28,8 +61,14 @@ const Os = ({ wordsRef, wordsFun, projectFun, skillsFun, findUsFun }) => {
             <div className={styles.flote_left}>
               <div className={styles.w_text}>
                 <p>
-                  You'll looks<br></br> better <span className={w_italic.className}>with us</span>
+                  Your Vision,<br></br> My <span  className={w_italic.className}>Coding...</span>
                 </p>
+                {/* <p>
+                  Coding Dreams<br></br> into <span className={w_italic.className}>Digital Realities</span>
+                </p> */}
+                {/* <p>
+                  You'll looks<br></br> better <span className={w_italic.className}>with us</span>
+                </p> */}
               </div>
               <div className={styles.w_quote}>
                 <Image alt="img" src={quote} className={styles.about_quote} ref={wordsRef}></Image>

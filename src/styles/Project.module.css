@@ -38,6 +38,7 @@
 .pro_img_w {
     height: 300px;
     width: 530px;
+    object-fit: cover;
 }
 
 .pro_con {
