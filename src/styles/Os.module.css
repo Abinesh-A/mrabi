@@ -108,8 +108,16 @@
   padding: 0 0 6rem 3.5rem;
 }
 
+.downloads {
+  margin: 0 0 0 2rem;
+}
+.downloads a{
+  padding: 2px;
+  text-decoration: underline;
+  font-weight: 900;
+}
 .date {
-  margin: 2rem 0 0 2rem;
+  margin: 0 0 0 2rem;
 }
 
 .date_text {

@@ -36,7 +36,7 @@ const Footer = ({findUsRef}) => {
             </div>
           </div>
         </div>
-        <div className={styles.foo_copyright}>Copyrights @ 2023</div>
+        {/* <div className={styles.foo_copyright}>Copyrights @ 2023</div> */}
       </div>
     </>
   );

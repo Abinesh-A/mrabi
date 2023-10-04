@@ -2,14 +2,15 @@ import styles from "@/styles/Os.module.css";
 import localFont from "@next/font/local";
 import Image from "next/image";
 import quote from "../../img/quote_1.jpg";
+import Link from "next/link";
 // import { useEffect, useRef, useState } from "react";
 
 const w_italic = localFont({
   // src: "../font/Rancho/Rancho-Regular.ttf",
-  src: '../font/Water_Brush/WaterBrush-Regular.ttf', 
+  src: "../font/Water_Brush/WaterBrush-Regular.ttf",
   weight: "500",
   style: "normal",
-  display: 'auto'
+  display: "auto",
 });
 
 const Os = ({ wordsRef, wordsFun, projectFun, skillsFun, findUsFun }) => {
@@ -61,7 +62,7 @@ const Os = ({ wordsRef, wordsFun, projectFun, skillsFun, findUsFun }) => {
             <div className={styles.flote_left}>
               <div className={styles.w_text}>
                 <p>
-                  Your Vision,<br></br> My <span  className={w_italic.className}>Coding...</span>
+                  Your Vision,<br></br> My <span className={w_italic.className}>Coding...</span>
                 </p>
                 {/* <p>
                   Coding Dreams<br></br> into <span className={w_italic.className}>Digital Realities</span>
@@ -110,6 +111,11 @@ const Os = ({ wordsRef, wordsFun, projectFun, skillsFun, findUsFun }) => {
                     </svg>
                   </a>
                 </div>
+              </div>
+              <div className={styles.downloads}>
+                <Link href="/api/pdf" download target="_blank">
+                  <div>Download CV</div>
+                </Link>
               </div>
               <div className={styles.date}>
                 <span className={styles.date_text}>
