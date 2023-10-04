@@ -65,6 +65,7 @@
 
 .about_head {
   color: rgba(0, 0, 0, 0.906);
+  margin: 2% 0 2%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -77,11 +78,20 @@
   font-size: smaller;
 }
 
+.about_tag_cv{
+  color: #8165a6;
+  margin-right: 1%;
+  padding: 0.2% 1% 0.5%;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: smaller;
+  border: 1px solid  #8165a6;
+}
 .about_text {
   margin: 10% 0 0 0;
   font-size: large;
   color: gray;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -95,10 +105,15 @@
   align-items: center;
   font-size: calc(45px + 2vmin);
   font-weight: 700;
-  line-height: 40px;
+  line-height: 39px;
   letter-spacing: -4px;
 }
-
+.about_box_2 small{
+  font-size: 50%;
+  font-weight: 200;
+  line-height: -50px;
+  letter-spacing: 0;
+}
 .w_nav {
   height: 500px;
   background: #d83f87;
