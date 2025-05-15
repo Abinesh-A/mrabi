@@ -4,6 +4,8 @@ import styles from "@/styles/Home.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useRef, useState } from "react";
+import Experiance from "./components/Experiance";
+import Education from "./components/Education";
 
 // const inter = Inter({ subsets: ["latin"] });
 const Os = React.lazy(() => import(/* webpackChunkName: 'os' */ /* webpackPrefetch: true */ "./components/Os"));
@@ -18,13 +20,15 @@ export default function Home() {
     AOS.init();
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
   const homeRef = useRef();
-  const wordsRef = useRef();
-  const projectRef = useRef();
+  const aboutRef = useRef();
   const skillsRef = useRef();
+  const experianceRef = useRef();
+  const educationRef = useRef();
+  const projectRef = useRef();
   const findUsRef = useRef();
 
   const scrollToRef = (ref) => {
@@ -42,9 +46,11 @@ export default function Home() {
       {!isLoading ? (
         <React.Suspense>
           <main className={styles.main} ref={homeRef}>
-            <Os wordsRef={wordsRef} wordsFun={() => scrollToRef(wordsRef)} projectFun={() => scrollToRef(projectRef)} skillsFun={() => scrollToRef(skillsRef)} findUsFun={() => scrollToRef(findUsRef)} />
-            <Project projectRef={projectRef} />
+            <Os aboutRef={aboutRef} aboutFun={() => scrollToRef(aboutRef)} experianceFun={() => scrollToRef(experianceRef)} educationFun={() => scrollToRef(educationRef)} projectFun={() => scrollToRef(projectRef)} skillsFun={() => scrollToRef(skillsRef)} findUsFun={() => scrollToRef(findUsRef) } />
             <Skill skillsRef={skillsRef} />
+            <Experiance experianceRef={experianceRef} />
+            <Education educationRef={educationRef} />
+            <Project projectRef={projectRef} />
             <Footer findUsRef={findUsRef} />
           </main>
           <div className={styles.custom_position}>

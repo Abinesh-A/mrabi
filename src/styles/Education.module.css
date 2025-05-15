@@ -1,0 +1,62 @@
+.pro_div {
+  margin: 0 5vw;
+  color: #0c0c22;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.edu_head {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: 800;
+  color: gray;
+  padding: 4%;
+}
+
+
+.edu_section {
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  padding: 60px 5vw;
+}
+
+
+.edu_table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.edu_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 12px;
+  transition: background 0.3s ease;
+}
+
+.edu_row:last-child {
+  border-bottom: none;
+}
+
+.edu_row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.edu_cell {
+  flex: 1;
+  font-size: 0.95rem;
+  padding: 0 10px;
+  color: #dcdcdc;
+  display: flex;
+  align-items: center;
+}
+
+.edu_cell:first-child {
+  font-weight: 600;
+  color: #ffffff;
+}

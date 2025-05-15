@@ -13,7 +13,7 @@
     padding: 4%;
 }
 .pro_con_head{
-    font-size: x-large;
+    font-size: medium;
     font-weight: 350;
     color: rgb(35, 35, 35);
 }
@@ -21,6 +21,7 @@
     color: grey;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px 0;
+    white-space: wrap;
 }
 .grid_div {
     display: flex;
@@ -32,12 +33,12 @@
 
 .pro_img {
     height: 300px;
-    width: 260px;
+    width: 16.25rem;
 }
 
 .pro_img_w {
     height: 300px;
-    width: 530px;
+    width: 33.125rem;
     object-fit: cover;
 }
 
@@ -48,6 +49,7 @@
 
 .pro_text_div {
     padding: 15px 15px 45px;
+    height: 230px;
 }
 
 @media (max-width: 610px) {

@@ -8,7 +8,7 @@ const Footer = ({findUsRef}) => {
         <div className={styles.foo_form}>
           <div className={styles.mail}>
             <Image alt="icon" width={25} height={25} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABt0lEQVR4nO2VTWsUQRCG5yAoGPCkoAejBw8S8GJQgnjPf/CuF9GLIP4AQYgxZ//CwLD9vN0OLgTm4jGHgOYQ8QNRJ4sQD4YgfmWllh4ZdxPcTHYxhxQU00wV9VR3VXUnyYHseymK4oikBWBNUnfEWgKPjJEYZAyAbl2BeQOV4wZJKpNIfA08H8NOVoElYKsHivpM0i1Jr0YA+ADcAxarf0mfwydgFrguqdMAsiHpgff+qqQ3ddtfoAj7AdxN03TCvpK+DAH4JulxlmUnvPfXgM1+nwFQDdhK0/SYc+6UBbEEtvH7JSkFzhZFcch2s1O8HUFRV7z352zeQgjnDV6zAUyZLcuyk7HG3cagPM+Pt9vto5axBQWumFbDnuf54VardQZ41wgEvLRjCyFctDWw7Jybrm4U7/0lS0TSC+BCCGFS0ttdgWyuJJ2WdCcWurJ9l3Q/1uJnzd+Kf8OO2Vp7KBDw3jl3GXjSoL2dpBlJH/8F6gA393gtdZxzt/tj/AEBn61VY8s2hXRjrC3gKbBeB/XIwNe9AjQIrGKW1q7zowZoEDjXm4UIG8dzUUp6aLP2/572A0mGlN9xGV8AyY3I8AAAAABJRU5ErkJggg==" />
-            &nbsp;&nbsp;2001mrabi@gmail.com
+            &nbsp;&nbsp;mrabinesh@outlook.com
           </div>
          
           <div className={styles.foo_sm}>
